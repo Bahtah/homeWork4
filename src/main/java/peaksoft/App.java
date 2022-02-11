@@ -13,10 +13,9 @@ public class App {
 
     public static void main(String[] args) throws SQLException {
 
-        //Student student = new Student("Aza", "Motorov", "python", 20);
-        //create(student);
-
         System.out.println(getStudentName(20, "Aza"));
+        //update("Aza", 18);
+        //delete("Aza");
     }
 
     public static int create(Student student) {
@@ -117,7 +116,7 @@ public class App {
      * 3. Аты Аза болгон жумушчуларды очурунуз.
      */
 
-    public static void deleteAza(String name) throws SQLException {
+    public static void delete(String name) throws SQLException {
 
         Session session = null;
         try {
